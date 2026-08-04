@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XII TKJ 1 — Kelas Teknik Komputer & Jaringan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#beranda" class="brand">XII<span class="brand-accent">TKJ</span>1</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#anggota">Anggota</a></li>
+                <li><a href="#jadwal">Jadwal</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="beranda">
+        <div class="hero-bg"></div>
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="container hero-inner">
+            <p class="hero-badge">🏫 SMK · Program Keahlian Teknik Komputer dan Jaringan</p>
+            <h1 class="hero-title">Kelas <span class="gradient-text">XII TKJ 1</span></h1>
+            <p class="hero-sub">
+                Satu kelas, satu tujuan — belajar, berkarya, dan tumbuh bersama
+                di dunia jaringan komputer. Generasi digital yang siap bersaing.
+            </p>
+            <div class="hero-cta">
+                <a href="#tentang" class="btn btn-primary">Kenali Kami</a>
+                <a href="#kontak" class="btn btn-ghost">Hubungi Kelas</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><strong id="stat-siswa">0</strong><span>Siswa</span></div>
+                <div class="stat"><strong id="stat-mapel">0</strong><span>Mata Pelajaran Kejuruan</span></div>
+                <div class="stat"><strong id="stat-wali">1</strong><span>Wali Kelas</span></div>
+            </div>
+        </div>
+        <a href="#tentang" class="scroll-hint" aria-label="Scroll ke bawah">▾</a>
+    </header>
+
+    <!-- TENTANG -->
+    <section class="section" id="tentang">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-tag">Tentang</p>
+                <h2 class="section-title">Apa itu TKJ?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        <strong>Teknik Komputer dan Jaringan (TKJ)</strong> adalah program keahlian
+                        di SMK yang fokus pada perakitan komputer, instalasi sistem operasi,
+                        konfigurasi jaringan, hingga administrasi server. Siswa TKJ dilatih untuk
+                        menjadi <em>teknisi</em> dan <em>administrator jaringan</em> yang kompeten.
+                    </p>
+                    <p>
+                        Kelas XII TKJ 1 adalah salah satu kelas jurusan TKJ yang berisi siswa-siswa
+                        antusias, kreatif, dan haus akan teknologi. Dari router, switch, sampai
+                        konfigurasi server — semua jadi makanan sehari-hari kami.
+                    </p>
+                    <ul class="about-list">
+                        <li>💡 Paham perangkat keras komputer</li>
+                        <li>🌐 Menguasai dasar konfigurasi jaringan</li>
+                        <li>🖥️ Bisa merakit dan troubleshooting PC</li>
+                        <li>🤝 Kompak dan saling bantu</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>Visi Kelas</h3>
+                    <p class="quote">
+                        "Menjadi kelas teladan yang unggul dalam keterampilan teknik komputer
+                        dan jaringan, berkarakter disiplin, dan siap kerja."
+                    </p>
+                    <div class="card-meta">
+                        <span>📍 Wali Kelas</span>
+                        <strong>Bapak/Ibu Guru Wali</strong>
+                        <span>🗓️ Tahun Ajaran 2025/2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section class="section section-alt" id="keahlian">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-tag">Kompetensi</p>
+                <h2 class="section-title">Yang Kami Pelajari</h2>
+            </div>
+            <div class="skill-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Perakitan Komputer</h3>
+                    <p>Merakit, menginstall, dan merawat perangkat keras komputer dari nol.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Jaringan Komputer</h3>
+                    <p>Konsep jaringan LAN/WAN, IP addressing, subnetting, dan media transmisi.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon">📡</div>
+                    <h3>Wireless & Mikrotik</h3>
+                    <p>Konfigurasi hotspot, router, dan perangkat jaringan wireless.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Administrasi Server</h3>
+                    <p>Dasar server, virtualisasi, dan layanan jaringan seperti DNS & DHCP.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon">🖧</div>
+                    <h3>Switching & Routing</h3>
+                    <p>Konfigurasi switch dan router untuk membangun jaringan yang stabil.</p>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon">🧰</div>
+                    <h3>Troubleshooting</h3>
+                    <p>Menemukan dan memperbaiki masalah jaringan maupun komputer.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANGGOTA -->
+    <section class="section" id="anggota">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-tag">Anggota</p>
+                <h2 class="section-title">Siswa XII TKJ 1</h2>
+                <p class="section-sub">Klik kartu untuk menambahkan / mengubah nama siswa kamu.</p>
+            </div>
+            <div class="member-grid" id="memberGrid">
+                <!-- Kartu anggota dibuat oleh JS -->
+            </div>
+            <div class="member-actions">
+                <button class="btn btn-primary" id="addMember">+ Tambah Anggota</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JADWAL -->
+    <section class="section section-alt" id="jadwal">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-tag">Kegiatan</p>
+                <h2 class="section-title">Jadwal Kelas</h2>
+            </div>
+            <div class="schedule-grid" id="scheduleGrid">
+                <!-- Jadwal dibuat oleh JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section" id="kontak">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-tag">Kontak</p>
+                <h2 class="section-title">Hubungi Kami</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Info Kelas</h3>
+                    <p>Ada pertanyaan, mau kerja sama, atau sekadar sapa? Silakan.</p>
+                    <ul class="contact-list">
+                        <li>🏫 SMK / Sekolah Menengah Kejuruan</li>
+                        <li>🏷️ Kelas XII TKJ 1</li>
+                        <li>💬 WhatsApp / Telegram grup kelas</li>
+                        <li>📍 Alamat sekolah kamu di sini</li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan kamu..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-brand">XII<span class="brand-accent">TKJ</span>1</p>
+            <p>© 2026 Kelas XII TKJ 1. Dibuat dengan 💙 dan semangat networking.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
